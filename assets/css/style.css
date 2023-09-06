@@ -191,7 +191,12 @@ aside article .image img {
 
 /* footer */
 footer {
-    padding: 1rem 5rem;
+    padding: 1rem 2rem;
+    color: #8e8e8e;
+}
+
+footer p {
+    text-align: center;
 }
 
 footer .container {
