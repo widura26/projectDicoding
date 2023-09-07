@@ -283,7 +283,7 @@ footer .container {
 
     header {
         justify-content: space-between;
-        padding: 20px;
+        padding: 20px 30px;
     }
     .header-logo h2{
         font-size: 20pt;
