@@ -19,8 +19,7 @@ header {
     background-color:#ffffff;
     padding: 20px 50px;
     display: flex;
-    justify-content: space-between;
-    place-items: center;
+    justify-content: end;
     box-shadow: 1px 2px 10px #dcdcdc;
     /* margin-bottom: 30px; */
     /* position: sticky; */
@@ -80,14 +79,14 @@ aside {
     /* height: max-content; */
 }
 
-table td {
-    line-height: 30px;
-    padding: 10px;
-    font-size: 10pt;
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-aside h1 {
-    margin-bottom: 20px;
+label {
+    font-weight: bold;
 }
 
 .articles {
@@ -96,10 +95,16 @@ aside h1 {
     gap: 50px;
 }
 
-article {
+aside article {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    padding: 20px;
+}
+.articles article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
     border-bottom: 1px solid #d8d8d8;
 }
@@ -166,14 +171,6 @@ aside h1 {
     font-size: 1.5em;
 }
 
-aside article p:nth-child(2){
-    font-weight: bold;
-}
-aside article p:nth-child(3) {
-    font-size: 10pt;
-    line-height: 20px;
-    text-align: justify;
-}
 aside article .image-container {
     display: flex;
     justify-content: center;
@@ -189,9 +186,23 @@ aside article .image img {
     transform: scale(1.5);
 }
 
+.worksCard {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.5;
+}
+
+.worksCard:hover {
+    background-color:#eaeaea ;
+}
+
 /* footer */
 footer {
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
     color: #8e8e8e;
 }
 
@@ -207,6 +218,7 @@ footer .container {
 
 
 .media-social ul {
+    border-top: 1px solid #ccc;
     padding: 10px 0;
     list-style-type: none;
     justify-content: center;
@@ -257,7 +269,6 @@ footer .container {
         padding: 10px 50px;
         display: block;
         text-align: center;
-        height: 39.200px;
         box-shadow: 1px 2px 10px #ccc;
         transition: all 0.5s ease;
     }
@@ -265,38 +276,10 @@ footer .container {
     .header-logo h2 {
         font-size: 14pt;
     }
-    
-    .header-active {
-        height: 68.400px;
-    }
-
-    nav {
-        display: none;
-    }
-
-    .header-navigation {
-        margin-top: 10px;
-    }
 
     .active {
         display: flex;
         justify-content: center;
-    }
-
-    .hero-word h1 {
-        font-size: 2.5em;
-        /* text-align: center; */
-    }
-
-    .hero-word p {
-        text-align: left;
-    }
-
-    .button {
-        display: flex;
-        justify-content: left;
-        gap: 10px;
-        margin-top: 20px;
     }
 
     #content-section {
