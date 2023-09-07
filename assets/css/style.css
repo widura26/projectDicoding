@@ -121,7 +121,6 @@ aside article {
     /* padding: 20px; */
 }
 .certificate .image {
-    /* filter: blur(5px); */
     height: 200px;
 }
 .certificate .image img {
@@ -204,20 +203,28 @@ footer p {
     text-align: center;
 }
 
-footer .container {
+.media-social {
+    border-top: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
+    padding: 20px 20px;
     place-items: center;
 }
 
-
 .media-social ul {
-    border-top: 1px solid #ccc;
-    padding: 10px 0;
     list-style-type: none;
-    justify-content: center;
+    /* justify-content: center; */
     display: flex;
     gap: 20px;
+}
+
+.contact-me button {
+    background-color: #000000;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 12pt;
 }
 
 .media-social ul li a{
