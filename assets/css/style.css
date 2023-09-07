@@ -19,7 +19,8 @@ header {
     background-color:#ffffff;
     padding: 20px 50px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    place-items: center;
     border-bottom: 1px solid #c3c3c3;
 }
 
@@ -254,6 +255,9 @@ footer .container {
 
 @media screen and (max-width: 468px)  {
 
+    .image-container {
+        padding: 20px;
+    }
     aside article .image {
         width: 125px;
         overflow: hidden;
@@ -278,12 +282,16 @@ footer .container {
     }
 
     header {
-        justify-content: center;
+        justify-content: space-between;
         padding: 20px;
     }
-    .header-logo h2 {
+    .header-logo h2{
         font-size: 20pt;
         font-weight: bolder;
+    }
+
+    .date p {
+        font-size: 20px;
     }
 
     .articles article {
