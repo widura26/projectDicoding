@@ -60,10 +60,6 @@ nav ul li a {
     padding: 20px;
 }
 
-.content h1 {
-    margin-bottom: 20px;
-}
-
 #bio p {
     font-size: 10pt;
     line-height: 30px;
@@ -265,23 +261,31 @@ footer .container {
 }
 
 @media screen and (max-width: 468px)  {
-    .header {
-        padding: 10px 50px;
-        display: block;
-        text-align: center;
-        box-shadow: 1px 2px 10px #ccc;
-        transition: all 0.5s ease;
+
+    aside {
+        padding: 0;
+    }
+
+    aside h1 {
+        padding: 20px;
+        font-size: 12pt;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+
+    p, label {
+        font-size: 10pt;
     }
 
     .header-logo h2 {
         font-size: 14pt;
     }
 
-    .active {
-        display: flex;
-        justify-content: center;
+    .articles article {
+        padding: 0;
     }
-
     #content-section {
         padding: 10px;
         display: flex;
